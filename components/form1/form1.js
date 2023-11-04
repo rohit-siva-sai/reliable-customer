@@ -41,7 +41,7 @@ const Form1 = () => {
         <div
           className="bg-[#009661] px-12 py-2 text-white font-semibold cursor-pointer  rounded-full  w-fit"
           onClick={() => {
-            if (email || email.includes("@gmail")) {
+            if (!email || email.includes("@gmail")) {
               toast.error("Please Fill Your Work Email");
               return;
             }
