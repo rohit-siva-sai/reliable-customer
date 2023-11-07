@@ -127,17 +127,17 @@ const Skills = () => {
       if (item.value) return item;
     });
 
-    updateMainSkills(temp.map((item) => item.name));
+    updateMainSkills(temp.map((item) => item.name))
   };
 
   return (
     <div>
-      <div className="grid grid-cols-6 gap-x-3 gap-y-5">
+      <div className="grid grid-cols-2 md:grid-cols-6 gap-x-3 gap-y-5">
         {skills.map((item) => {
           return (
             <div
               className={`border hover:shadow-lg duration-300 transition-shadow  ${
-                item.value == true ? "border-blue-500" : "border-gray-300"
+                item.value == true ? "border-blue-500 border-2" : "border-gray-300"
               } rounded-md shadow cursor-pointer flex flex-col  items-center py-4 space-y-2`}
               onClick={() => {
                 changeValue(item.name);

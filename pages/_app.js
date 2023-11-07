@@ -109,7 +109,8 @@ export default function App({ Component, pageProps }) {
         ventureCapitalFund: ventureCapitalFund,
         publicIpoCompany: publicIpoCompany,
         employeeCount: employeeCount,
-        companyWebsite: companyWebsite
+        companyWebsite: companyWebsite,
+        timestamp: new Date()
         
       })
      

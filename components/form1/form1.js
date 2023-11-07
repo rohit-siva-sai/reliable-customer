@@ -26,11 +26,11 @@ const Form1 = () => {
       <div className="md:px-4 px-4 flex flex-col space-y-6">
         <div className="flex justify-between">
           <div>
-            <p className="text-3xl text-gray-800  ">Find developers to hire</p>
+            <p className=" text-2xl md:text-3xl text-gray-800  ">Find developers to hire</p>
             <p className="text-base text-gray-600">Select at least one skill</p>
           </div>
           <div>
-            <p className="border rounded-full px-4 py-1 text-gray-700 text-sm font-medium w-fit">
+            <p className="border  rounded-full px-2 md:px-4 py-1 text-gray-700 text-sm font-medium w-fit">
               Step {formNo}/3
             </p>
           </div>

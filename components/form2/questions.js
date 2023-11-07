@@ -31,15 +31,15 @@ const Questions = () => {
 
   return (
     <div className="flex flex-col space-y-6">
-      <div className="flex space-x-6 items-center">
-        <p className="text-gray-700 font-medium text-lg">Your hiring needs</p>
-        <div className="flex space-x-3 items-center">
+      <div className="flex space-x-3 md:space-x-6 items-center">
+        <p className="text-gray-700 font-medium text-base md:text-lg">Your hiring needs</p>
+        <div className="flex space-x-2 md:space-x-3 items-center">
           <div
             className={`border font-semibold ${
               hiring == "Part Time"
                 ? "bg-blue-500 text-white"
                 : "bg-transparent "
-            } text-xs rounded-full px-4 cursor-pointer text-gray-600 py-2`}
+            } text-xs rounded-full px-2 md:px-4 cursor-pointer text-gray-600 py-2`}
             onClick={() => {
               setHiring("Part Time");
               updateHiringNeeds("Part Time");
@@ -52,7 +52,7 @@ const Questions = () => {
               hiring == "Full Time"
                 ? "bg-blue-500  text-white"
                 : "bg-transparent"
-            } rounded-full px-4 cursor-pointer text-gray-600 py-2`}
+            } rounded-full  px-2 md:px-4  cursor-pointer text-gray-600 py-2`}
             onClick={() => {
               setHiring("Full Time");
               updateHiringNeeds("Full Time");
@@ -62,15 +62,15 @@ const Questions = () => {
           </div>
         </div>
       </div>
-      <div className="flex space-x-6 items-center">
-        <p className="text-gray-700 font-medium text-lg">
+      <div className="flex space-x-3 md:space-x-6 items-center">
+        <p className="text-gray-700 font-medium text-base md:text-lg">
           Are you Seed or Venture Capital funded?
         </p>
-        <div className="flex space-x-3 items-center">
+        <div className="flex space-x-2 md:space-x-3  items-center">
           <div
             className={`border font-semibold ${
               venture == "Yes" ? "bg-blue-500 text-white" : "bg-transparent "
-            } text-xs rounded-full px-4 cursor-pointer text-gray-600 py-2`}
+            } text-xs rounded-full  px-2 md:px-4  cursor-pointer text-gray-600 py-2`}
             onClick={() => {
               setVenture("Yes");
               updateVentureCaptalFund("Yes");
@@ -81,7 +81,7 @@ const Questions = () => {
           <div
             className={`border font-semibold text-xs ${
               venture == "No" ? "bg-blue-500  text-white" : "bg-transparent"
-            } rounded-full px-4 cursor-pointer text-gray-600 py-2`}
+            } rounded-full  px-2 md:px-4  cursor-pointer text-gray-600 py-2`}
             onClick={() => {
               setVenture("No");
               updateVentureCaptalFund("No");
@@ -91,11 +91,11 @@ const Questions = () => {
           </div>
         </div>
       </div>
-      <div className="flex space-x-6 items-center">
-        <p className="text-gray-700 font-medium text-lg">
+      <div className="flex space-x-3 md:space-x-6 items-center">
+        <p className="text-gray-700 font-medium text-base md:text-lg">
           Are you a publicly listed/post IPO company?
         </p>
-        <div className="flex space-x-3 items-center">
+        <div className="flex space-x-2 md:space-x-3  items-center">
           <div
             className={`border font-semibold ${
               ipo == "Yes" ? "bg-blue-500 text-white" : "bg-transparent "
@@ -121,10 +121,10 @@ const Questions = () => {
         </div>
       </div>
       <div className="flex flex-col space-y-2">
-        <p className="text-gray-700 font-medium text-lg">
+        <p className="text-gray-700 font-medium text-base md:text-lg">
           Current employees in your company?
         </p>
-        <div className="flex space-x-3 items-center">
+        <div className="flex space-x-2 md:space-x-3 items-center">
           {arrayCount.map((item) => {
             return (
               <div
@@ -132,7 +132,7 @@ const Questions = () => {
                   count == item
                     ? "bg-blue-500 text-white"
                     : "bg-transparent "
-                } text-xs rounded-full px-4 cursor-pointer text-gray-600 py-2`}
+                } text-xs rounded-full px-2 md:px-4  cursor-pointer text-gray-600 py-2`}
                 onClick={() => {
                   setCount(item);
                   updateEmployeeCount(item);

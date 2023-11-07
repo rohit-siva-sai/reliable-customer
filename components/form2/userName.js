@@ -42,7 +42,7 @@ const UserName = () => {
               updateUserName(name);
             }}
             placeholder="Your Name"
-            className="border outline-none w-1/2  rounded-md py-2 px-12 text-gray-500 focus:border-blue-600 border-green-600 "
+            className="border outline-none w-full md:w-1/2  rounded-md py-2 px-12 text-gray-500 focus:border-blue-600 border-green-600 "
           />
           <FaUser
             className="text-gray-400 absolute top-2 opacity-50 left-4"
@@ -62,7 +62,7 @@ const UserName = () => {
             onBlur={() => {
               updatePhoneNumber(phone);
             }}
-            className="border outline-none rounded-md  w-1/2  px-4 py-2 text-gray-500 focus:border-blue-600 border-green-600 "
+            className="border outline-none rounded-md   w-full md:w-1/2   px-4 py-2 text-gray-500 focus:border-blue-600 border-green-600 "
           />
         </div>
       </div>
@@ -81,7 +81,7 @@ const UserName = () => {
             onBlur={() => {
               updateCompanyWebsite(website);
             }}
-            className="border outline-none w-1/2  rounded-md py-2 px-12 text-gray-500 focus:border-blue-600 border-green-600 "
+            className="border outline-none  w-full md:w-1/2  rounded-md py-2 px-12 text-gray-500 focus:border-blue-600 border-green-600 "
           />
           <FaLink
             className="text-gray-400 absolute top-3 opacity-50 left-4"

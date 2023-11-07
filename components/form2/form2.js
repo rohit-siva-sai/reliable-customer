@@ -15,13 +15,13 @@ const Form2 = ({submitNewUser}) => {
     <div className="md:px-4  px-4 flex flex-col space-y-4">
       <div className="flex justify-between">
         <div>
-          <p className="text-lg w-3/4 font-semibold text-gray-800  ">
+          <p className="text-lg md:w-3/4 font-semibold text-gray-800  ">
             20+ Vetted Senior Software Engineers have the skills you need
           </p>
         </div>
-        <div className="flex justify-end items-center space-x-3">
+        <div className="flex justify-end items-start md:items-center space-x-3">
           <div
-            className="border rounded-full cursor-pointer px-3 py-1 hover:bg-gray-100"
+            className="border rounded-full cursor-pointer px-1 md:px-3 py-1 hover:bg-gray-100"
             onClick={() => {
               updateFormNo(formNo - 1);
             }}
@@ -29,7 +29,7 @@ const Form2 = ({submitNewUser}) => {
             <MdOutlineKeyboardArrowLeft size={25} className="text-gray-700" />
           </div>
           <div>
-            <p className="border rounded-full px-4 py-1 text-gray-700 text-sm font-medium w-fit">
+            <p className="border rounded-full px-2 md:px-4 py-1 text-gray-700 text-sm font-medium w-fit">
               Step {formNo} / 3
             </p>
           </div>

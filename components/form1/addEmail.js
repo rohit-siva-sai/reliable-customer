@@ -44,14 +44,15 @@ const AddEmail = () => {
   const [add, setAdd] = useState(addSkills);
   const [mail, setMail] = useState(email);
   
+
   return (
     <div className="flex flex-col space-y-6">
-      <div className="flex flex-col space-y-4">
-        <p className="text-gray-600 px-3 font-semibold">Phone Number</p>
+      <div className="flex flex-col space-y-2">
+        <p className="text-gray-600  font-semibold">Additional Skills</p>
         <div className="relative">
           <Select
             onChange={(e) => {
-              setAdd(e);
+              setAdd(e.map((item) => item.label));
             }}
             isMulti
             // closeMenuOnSelect={false}
@@ -66,14 +67,13 @@ const AddEmail = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col space-y-4">
-        <p className="text-gray-600 px-3 font-semibold">Email</p>
+      <div className="flex flex-col space-y-2">
+        <p className="text-gray-600  font-semibold">Work Email</p>
         <div className="relative">
           <input
             type="email"
             name="email"
             value={mail}
-
             id=""
             onChange={(e) => {
               setMail(e.target.value);
@@ -82,7 +82,7 @@ const AddEmail = () => {
             onBlur={() => {
               updateEmail(mail);
             }}
-            className="border outline-none w-1/2  rounded-md py-2 px-12 text-gray-500 focus:border-blue-600 border-green-600 "
+            className="border outline-none w-full md:w-1/2  rounded-md py-2 px-12 text-gray-500 focus:border-blue-600 border-green-600 "
           />
           <MdEmail
             className="text-gray-400 absolute top-2 opacity-50 left-4"

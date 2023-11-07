@@ -72,7 +72,7 @@ export default function Home({ submitNewUser }) {
         <div
           className={` ${
             !(formNo == 3) ? "col-span-2" : "col-span-3"
-          }   flex flex-col  md:px-6 px-4 py-8 `}
+          }   flex flex-col  md:px-6  py-8 `}
         >
           {formNo == 1 && <Form1 />}
           {formNo == 2 && <Form2 submitNewUser={submitNewUser} />}
